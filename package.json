@@ -1,0 +1,25 @@
+{
+  "name": "little_ci_telebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "node-telegram-bot-api": "^0.51.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukairex/little_ci_telebot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukairex/little_ci_telebot/issues"
+  },
+  "homepage": "https://github.com/yukairex/little_ci_telebot#readme"
+}
