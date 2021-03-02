@@ -1,4 +1,5 @@
 const { bot } = require('./tel_bot.js');
+const { getHelp } = require('./tasks/help');
 const { getGasOutput } = require('./tasks/gas');
 
 const ONE_MINUTE = 1000 * 60;
@@ -8,6 +9,14 @@ const App = async () => {
   // setup tasks
   bot.on('message', async (msg) => {
     console.log(msg);
+
+    if (msg.text === '/help') {
+      let out = getHelp();
+      bot.sendMessage(msg.chat.id, out.text, {
+        parse_mode: out.mode,
+      });
+    }
+
     if (msg.text === '/gas') {
       let out = await getGasOutput();
       bot.sendMessage(msg.chat.id, out.text, {
