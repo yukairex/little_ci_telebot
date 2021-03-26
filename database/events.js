@@ -13,6 +13,10 @@ var events = [
     date: '03/31/2021',
     event: 'Fei Launch',
   },
+  {
+    date: '04/01/2021',
+    event: 'Rally Coinlist Sale',
+  },
 
   {
     date: '04/04/2021',
