@@ -18,6 +18,10 @@ var events = [
     date: '04/04/2021',
     event: 'Float Launch',
   },
+  {
+    date: '05/05/2021',
+    event: 'Uniswap V3 Launch',
+  },
 ];
 
 exports.default = events;
