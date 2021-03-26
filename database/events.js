@@ -19,6 +19,14 @@ var events = [
     event: 'Float Launch',
   },
   {
+    date: '04/13/2021',
+    event: 'MINA Coinlist Community Sale',
+  },
+  {
+    date: '04/16/2021',
+    event: 'MINA Coinlist Uncapped Sale',
+  },
+  {
     date: '05/05/2021',
     event: 'Uniswap V3 Launch',
   },
