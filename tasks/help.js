@@ -5,6 +5,11 @@ const help = [
     name: '/gas',
     description: 'return current gas fee on Ethereum',
   },
+
+  {
+    name: '/event',
+    description: 'return upcoming events',
+  },
 ];
 
 const print = () => {
