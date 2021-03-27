@@ -19,6 +19,7 @@ const getEvents = () => {
     }
   });
 
+  //
   // output events
   if (events_f.length == 0) {
     return {
