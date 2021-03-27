@@ -26,8 +26,10 @@ const getEvents = () => {
       mode: 'HTML',
     };
   } else {
+    // sort the events based on date
+    events_f.sort(compare);
+
     let table = stringTable.create(events_f);
-    console.log(table);
     return {
       text: `<pre> ${table} </pre>`,
       mode: 'HTML',
@@ -35,4 +37,14 @@ const getEvents = () => {
   }
 };
 
+function compare(a, b) {
+  const dateA = a.date;
+  const dateB = b.date;
+  var comp = 0;
+  if (dateA > dateB) comp = 1;
+  if (dateA < dateB) comp = -1;
+  return comp;
+}
+
+getEvents();
 module.exports.getEvents = getEvents;
