@@ -10,6 +10,16 @@ var events = [
   },
 
   {
+    date: '03/29/2021',
+    event: 'Cosmos IBC Launch',
+  },
+
+  {
+    date: '03/30/2021',
+    event: 'Hopr Farming',
+  },
+
+  {
     date: '03/31/2021',
     event: 'Fei Launch',
   },
