@@ -33,6 +33,10 @@ var events = [
     event: 'Float Launch',
   },
   {
+    date: '04/04/2021',
+    event: 'Gyroscope incentivized testnet',
+  },
+  {
     date: '04/13/2021',
     event: 'MINA Coinlist Community Sale',
   },
