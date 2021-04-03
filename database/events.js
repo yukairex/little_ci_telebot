@@ -56,6 +56,22 @@ var events = [
     date: '04/03/2021',
     event: 'Force DAO airdrop',
   },
+  {
+    date: '04/14/2021',
+    event: 'Coinbase IPO',
+  },
+  {
+    date: '04/10/2021',
+    event: 'DeGate IDO',
+  },
+  {
+    date: '04/06/2021',
+    event: 'Boson IDO',
+  },
+  {
+    date: '04/04/2021',
+    event: 'Findora IDO',
+  },
 ];
 
 exports.default = events;
