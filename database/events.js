@@ -29,7 +29,7 @@ var events = [
   },
 
   {
-    date: '04/04/2021',
+    date: '05/02/2021',
     event: 'Float Launch',
   },
   {
@@ -47,6 +47,14 @@ var events = [
   {
     date: '05/05/2021',
     event: 'Uniswap V3 Launch',
+  },
+  {
+    date: '04/05/2021',
+    event: 'Fei Launch',
+  },
+  {
+    date: '04/03/2021',
+    event: 'Force DAO airdrop',
   },
 ];
 
