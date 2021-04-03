@@ -72,6 +72,10 @@ var events = [
     date: '04/04/2021',
     event: 'Findora IDO',
   },
+  {
+    date: '04/13/2021',
+    event: 'EPNS IDO',
+  },
 ];
 
 exports.default = events;
