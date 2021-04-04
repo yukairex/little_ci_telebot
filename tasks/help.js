@@ -10,6 +10,10 @@ const help = [
     name: '/event',
     description: 'return upcoming events',
   },
+  {
+    name: '/fei',
+    description: 'return FEI stats',
+  },
 ];
 
 const print = () => {
