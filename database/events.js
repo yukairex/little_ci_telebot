@@ -76,6 +76,10 @@ var events = [
     date: '04/13/2021',
     event: 'EPNS IDO',
   },
+  {
+    date: '04/07/2021',
+    event: 'Binance Launchpad Tokocrypto',
+  },
 ];
 
 exports.default = events;
