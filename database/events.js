@@ -50,7 +50,7 @@ var events = [
   },
   {
     date: '04/05/2021',
-    event: 'Fei Launch',
+    event: 'Fei Liquidity Mining',
   },
   {
     date: '04/03/2021',
@@ -79,6 +79,18 @@ var events = [
   {
     date: '04/07/2021',
     event: 'Binance Launchpad Tokocrypto',
+  },
+  {
+    date: '04/08/2021',
+    event: 'Cere ICO on Republic',
+  },
+  {
+    date: '04/15/2021',
+    event: 'Cere ICO on DaoMaker',
+  },
+  {
+    date: '04/21/2021',
+    event: 'Cere ICO on Polkastarter',
   },
 ];
 
