@@ -56,20 +56,18 @@ const checkReweightEligibility = async () => {
 
 const getFeiInfo = async () => {
   const block = await provider.getBlockNumber();
-  console.log(block);
   const isEligible = await checkReweightEligibility();
-  console.log(isEligible);
   const p = await checkParity();
   const print = `block *${block}*
-  reweight: ${isEligible ? 'Yes call it!' : 'Not yet'}
+  reweight: ${isEligible[0] ? 'Yes lets call it!' : 'Nah..not yet'}
   sell penalty: ${p.sellPenalty}%,
   buy incentive: ${p.buyIncentive}%`;
-
+  console.log(print);
   return {
     text: print,
     mode: 'Markdown',
   };
 };
 
-// getFeiInfo();
+getFeiInfo();
 module.exports.getFeiInfo = getFeiInfo;
