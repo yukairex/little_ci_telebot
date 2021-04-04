@@ -54,17 +54,6 @@ const checkReweightEligibility = async () => {
   return isEligible;
 };
 
-// const App = () => {
-//   provider.on('block', async (blockNumber) => {
-//     console.group(`checking block ${blockNumber}`);
-//     await checkReweightEligibility();
-//     await checkParity();
-//     console.groupEnd();
-//   });
-// };
-
-// App();
-
 const getFeiInfo = async () => {
   const block = await provider.getBlockNumber();
   console.log(block);
@@ -72,7 +61,7 @@ const getFeiInfo = async () => {
   console.log(isEligible);
   const p = await checkParity();
   const print = `block *${block}*
-  reweight: ${isEligible}
+  reweight: ${isEligible ? 'Yes call it!' : 'Not yet'}
   sell penalty: ${p.sellPenalty}%,
   buy incentive: ${p.buyIncentive}%`;
 
