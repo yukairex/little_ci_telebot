@@ -4,6 +4,9 @@ const provider = new ethers.providers.InfuraProvider(
   'mainnet',
   process.env.INFURA
 );
+const { bot } = require('../tel_bot.js');
+
+const groupChatId = -380130924;
 
 const UniswapIncentive = '0xfe5b6c2a87A976dCe20130c423C679f4d6044cD7';
 const UniswapIncentiveAbi =
@@ -69,5 +72,16 @@ const getFeiInfo = async () => {
   };
 };
 
-getFeiInfo();
+const ListenToReweight = async () => {
+  let filter = await controller.filters.Reweight();
+  provider.on(filter, async (e) => {
+    console.log(e);
+    bot.sendMessage(groupChatId, 'Fei Just REWEIGHT!', {
+      parse_mode: out.mode,
+    });
+  });
+};
+
+//getFeiInfo();
 module.exports.getFeiInfo = getFeiInfo;
+module.exports.ListenToReweight = ListenToReweight;

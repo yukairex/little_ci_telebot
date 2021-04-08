@@ -2,7 +2,7 @@ const { bot } = require('./tel_bot.js');
 const { getHelp } = require('./tasks/help');
 const { getGasOutput } = require('./tasks/gas');
 const { getEvents } = require('./tasks/event');
-const { getFeiInfo } = require('./tasks/fei');
+const { getFeiInfo, ListenToReweight } = require('./tasks/fei');
 
 const ONE_MINUTE = 1000 * 60;
 const ONE_HOUR = ONE_MINUTE * 60;
@@ -21,6 +21,7 @@ const App = async () => {
 
     if (msg.text === '/gas') {
       let out = await getGasOutput();
+      console.log(msg.chat.id);
       bot.sendMessage(msg.chat.id, out.text, {
         parse_mode: out.mode,
       });
@@ -29,6 +30,7 @@ const App = async () => {
     if (msg.text === '/event') {
       let out = getEvents();
       console.log(out);
+
       bot.sendMessage(msg.chat.id, out.text, {
         parse_mode: out.mode,
       });
@@ -41,6 +43,9 @@ const App = async () => {
       });
     }
   });
+
+  // listener
+  ListenToReweight();
 
   // // setup periodic intervals
   // setInterval(async () => {

@@ -47,5 +47,4 @@ function compare(a, b) {
   return comp;
 }
 
-getEvents();
 module.exports.getEvents = getEvents;
