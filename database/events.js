@@ -81,7 +81,7 @@ var events = [
     event: 'Binance Launchpad Tokocrypto',
   },
   {
-    date: '04/08/2021',
+    date: '04/13/2021',
     event: 'Cere ICO on Republic',
   },
   {
