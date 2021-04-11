@@ -5,6 +5,7 @@ const provider = new ethers.providers.InfuraProvider(
   process.env.INFURA
 );
 const { bot } = require('../tel_bot.js');
+const { checkPrice } = require('../lib/price');
 
 const groupChatId = -380130924;
 
@@ -60,8 +61,12 @@ const checkReweightEligibility = async () => {
 const getFeiInfo = async () => {
   const block = await provider.getBlockNumber();
   const isEligible = await checkReweightEligibility();
+  // check price
+  let result = await checkPrice(['fei-protocol', 'tribe-2']);
   const p = await checkParity();
   const print = `block *${block}*
+  fei: ${result['fei-protocol'].usd} usd
+  tribe: ${result['tribe-2'].usd} usd
   reweight: ${isEligible[0] ? 'Yes lets call it!' : 'Nah..not yet'}
   sell penalty: ${p.sellPenalty}%,
   buy incentive: ${p.buyIncentive}%`;
@@ -71,6 +76,7 @@ const getFeiInfo = async () => {
     mode: 'Markdown',
   };
 };
+getFeiInfo();
 
 const ListenToReweight = async () => {
   let filter = await controller.filters.Reweight();
