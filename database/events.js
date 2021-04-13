@@ -92,6 +92,14 @@ var events = [
     date: '04/21/2021',
     event: 'Cere ICO on Polkastarter',
   },
+  {
+    date: '04/22/2021',
+    event: 'Integral Finance Public Fund Raise',
+  },
+  {
+    date: '04/21/2021',
+    event: 'Clover Coinlist ICO',
+  },
 ];
 
 exports.default = events;
