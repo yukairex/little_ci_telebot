@@ -100,6 +100,10 @@ var events = [
     date: '04/21/2021',
     event: 'Clover Coinlist ICO',
   },
+  {
+    date: '04/15/2021',
+    event: 'Pop Art - ETH Berlin Utube Drop',
+  },
 ];
 
 exports.default = events;
