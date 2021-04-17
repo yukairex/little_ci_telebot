@@ -29,7 +29,7 @@ var events = [
   },
 
   {
-    date: '05/02/2021',
+    date: '05/06/2021',
     event: 'Float Launch',
   },
   {
@@ -103,6 +103,18 @@ var events = [
   {
     date: '04/15/2021',
     event: 'Pop Art - ETH Berlin Utube Drop',
+  },
+  {
+    date: '04/22/2021',
+    event: 'Smoothy IDO on BSC Pad',
+  },
+  {
+    date: '04/24/2021',
+    event: 'Smoothy IDO on DAO Maker',
+  },
+  {
+    date: '04/24/2021',
+    event: 'Smoothy IDO on Paddle',
   },
 ];
 
