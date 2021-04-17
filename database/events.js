@@ -116,6 +116,10 @@ var events = [
     date: '04/24/2021',
     event: 'Smoothy IDO on Paddle',
   },
+  {
+    date: '04/28/2021',
+    event: 'Maple LBP on Balancer',
+  },
 ];
 
 exports.default = events;
