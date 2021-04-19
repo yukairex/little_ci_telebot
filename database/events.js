@@ -34,6 +34,10 @@ var events = [
   },
   {
     date: '04/04/2021',
+    event: 'Sharding DAO ready to harvest',
+  },
+  {
+    date: '04/04/2021',
     event: 'Gyroscope incentivized testnet',
   },
   {
