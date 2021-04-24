@@ -28,10 +28,10 @@ const query = `{
   }
 }`;
 
-const assets = [];
 const symbol_lists = ['USDT', 'USDC', 'DAI', 'GUSD', 'WETH', 'WBTC'];
 
 const App = async () => {
+  const assets = [];
   // check price from coingecki
   let price = await checkPrice(['bitcoin', 'ethereum', 'aave']);
   console.log(price);
