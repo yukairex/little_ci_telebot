@@ -3,6 +3,7 @@ const { getHelp } = require('./tasks/help');
 const { getGasOutput } = require('./tasks/gas');
 const { getEvents } = require('./tasks/event');
 const { getFeiInfo, ListenToReweight } = require('./tasks/fei');
+const { getAaveAPR } = require('./tasks/aave');
 
 const ONE_MINUTE = 1000 * 60;
 const ONE_HOUR = ONE_MINUTE * 60;
@@ -21,6 +22,14 @@ const App = async () => {
 
     if (msg.text === '/gas') {
       let out = await getGasOutput();
+      console.log(msg.chat.id);
+      bot.sendMessage(msg.chat.id, out.text, {
+        parse_mode: out.mode,
+      });
+    }
+
+    if (msg.text === '/aave') {
+      let out = await getAaveAPR();
       console.log(msg.chat.id);
       bot.sendMessage(msg.chat.id, out.text, {
         parse_mode: out.mode,

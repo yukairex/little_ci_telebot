@@ -34,10 +34,6 @@ var events = [
   },
   {
     date: '04/04/2021',
-    event: 'Sharding DAO ready to harvest',
-  },
-  {
-    date: '04/04/2021',
     event: 'Gyroscope incentivized testnet',
   },
   {
@@ -123,6 +119,10 @@ var events = [
   {
     date: '04/28/2021',
     event: 'Maple LBP on Balancer',
+  },
+  {
+    date: '04/28/2021',
+    event: 'Pendle LBP on Balancer',
   },
 ];
 
