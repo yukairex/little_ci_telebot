@@ -23,7 +23,7 @@ const getEvents = () => {
   // output events
   if (events_f.length == 0) {
     return {
-      text: `Sorry, no upcoming events`,
+      text: `No upcoming events. Ask Erica for ALPHA!`,
       mode: 'HTML',
     };
   } else {
