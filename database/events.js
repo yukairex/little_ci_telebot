@@ -124,6 +124,10 @@ var events = [
     date: '04/28/2021',
     event: 'Pendle LBP on Balancer',
   },
+  {
+    date: '04/28/2021',
+    event: 'Force DAO v2 airdrop',
+  },
 ];
 
 exports.default = events;
