@@ -128,6 +128,10 @@ var events = [
     date: '04/28/2021',
     event: 'Force DAO v2 airdrop',
   },
+  {
+    date: '05/26/2021',
+    event: 'Centrifuge Sale on CoinList',
+  },
 ];
 
 exports.default = events;
