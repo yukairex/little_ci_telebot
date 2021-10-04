@@ -1,6 +1,6 @@
 const { bot } = require('./tel_bot.js');
 const { getHelp } = require('./tasks/help');
-const { getGasOutput } = require('./tasks/gas');
+const { getGasOutput } = require('./tasks/gas_on_mempool');
 const { getEvents } = require('./tasks/event');
 const { getFeiInfo, ListenToReweight } = require('./tasks/fei');
 const { getAaveAPR } = require('./tasks/aave');
