@@ -34,4 +34,5 @@ const getGasOutput = async () => {
   };
 };
 
-getGasOutput();
+// getGasOutput();
+module.exports.getGasOutput = getGasOutput;

@@ -45,12 +45,12 @@ const App = async () => {
       });
     }
 
-    if (msg.text === '/fei') {
-      let out = await getFeiInfo();
-      bot.sendMessage(msg.chat.id, out.text, {
-        parse_mode: out.mode,
-      });
-    }
+    // if (msg.text === '/fei') {
+    //   let out = await getFeiInfo();
+    //   bot.sendMessage(msg.chat.id, out.text, {
+    //     parse_mode: out.mode,
+    //   });
+    // }
   });
 
   // listener
