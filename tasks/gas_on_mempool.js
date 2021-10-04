@@ -5,7 +5,10 @@ const URI = 'https://api.blocknative.com/gasprices/blockprices';
 // data print
 const print = (gas) => {
   return `
-  ETH Gas baseFee: ${gas.blockPrices[0].baseFeePerGas.toFixed(2)}
+  *ETH Gas Estimation*
+  baseFee: ${gas.blockPrices[0].estimatedPrices[0].price}
+  maxPriorityFeePerGas: ${gas.blockPrices[0].estimatedPrices[0].maxPriorityFeePerGas}
+  maxFeePerGas:: ${gas.blockPrices[0].estimatedPrices[0].maxFeePerGas}
   `;
 };
 
@@ -24,7 +27,7 @@ const getGas = async () => {
 
 const getGasOutput = async () => {
   let gas = await getGas();
-  //console.log(print(gas));
+  console.log(print(gas));
   return {
     text: print(gas),
     mode: 'Markdown',
