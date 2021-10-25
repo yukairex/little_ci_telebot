@@ -54,7 +54,7 @@ const App = async () => {
   });
 
   // listener
-  ListenToReweight();
+  //ListenToReweight();
 
   // // setup periodic intervals
   // setInterval(async () => {
